@@ -3,7 +3,7 @@
 <p align="center">Yoka Romadani (2311110060)</p>
 
 ## Daftar Isi
-- [Studi Kasus]
+- [Studi Kasus](#Studi-Kasus)
 - [Struktur Program](#Struktur-Program)
 - [Deskripsi Algoritma](#Deskripsi-Algoritma)
 - [Grafik Perbandingan Running Time](#Grafik-Perbandingan-Running-Time)
