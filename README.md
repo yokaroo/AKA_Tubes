@@ -11,11 +11,10 @@
 - [Kesimpulan](#Kesimpulan)
 - [Referensi](#Referensi)
 
-**Laporan Analisis Perbandingan Algoritma Rekursif dan Iteratif**
 
 ---
 
-### **1. Studi Kasus**
+###  Studi Kasus
 Pada studi kasus ini, kita membandingkan kinerja dua pendekatan algoritma (“rekursif” dan “iteratif”) untuk menemukan elemen maksimum dari sebuah array. Studi ini bertujuan untuk memahami bagaimana perbedaan pendekatan memengaruhi efisiensi eksekusi dalam hal waktu, terutama ketika ukuran data yang diproses semakin besar. Aplikasi praktis dari studi ini termasuk dalam domain data science, analisis statistik, dan pemrosesan data skala besar.
 
 **Pertanyaan Penelitian:**
@@ -24,25 +23,25 @@ Pada studi kasus ini, kita membandingkan kinerja dua pendekatan algoritma (“re
 
 ---
 
-### **2. Struktur Program**
+### Struktur Program
 
-**2.1. Input:**
+**Input:**
 - Lima array dengan panjang berbeda, diinput oleh pengguna.
 - Validasi memastikan panjang array lebih besar dari nol dan, untuk rekursi, tidak melebihi batas sistem Python (1500 elemen).
 
-**2.2. Proses:**
+**Proses:**
 1. **Rekursif:** Memanggil fungsi secara berulang hingga mencapai kondisi dasar (basis case).
 2. **Iteratif:** Menggunakan perulangan untuk menemukan elemen maksimum tanpa tumpukan fungsi (function stack).
 
-**2.3. Output:**
+**Output:**
 - Tabel berisi panjang array, waktu eksekusi pendekatan rekursif, dan waktu eksekusi pendekatan iteratif.
 - Grafik perbandingan waktu eksekusi.
 
 ---
 
-### **3. Deskripsi Algoritma**
+### **Deskripsi Algoritma**
 
-**3.1. Pendekatan Rekursif**
+**Pendekatan Rekursif**
 - **Ide Utama:** Fungsi memanggil dirinya sendiri hingga mencapai basis case.
 - **Pseudocode:**
   ```python
@@ -58,7 +57,7 @@ Pada studi kasus ini, kita membandingkan kinerja dua pendekatan algoritma (“re
 - **Basis Case:** Jika panjang array (“n”) adalah 1, maka elemen tunggal tersebut adalah maksimum.
 - **Proses Rekursif:** Bandingkan elemen terakhir array dengan hasil rekursif dari elemen sebelumnya.
 
-**3.2. Pendekatan Iteratif**
+**Pendekatan Iteratif**
 - **Ide Utama:** Menggunakan perulangan untuk memeriksa setiap elemen array dan menentukan maksimum tanpa menggunakan rekursi.
 - **Pseudocode:**
   ```python
@@ -72,12 +71,14 @@ Pada studi kasus ini, kita membandingkan kinerja dua pendekatan algoritma (“re
       return max_value
   ```
 - **Proses Iterasi:** Memulai dengan elemen pertama sebagai nilai maksimum sementara, lalu membandingkan dengan elemen lainnya dalam loop.
+### **Grafik Perbandingan Running Time:**
 
+![image](https://github.com/yokaroo/Random/blob/main/download.png)
 ---
 
-### **4. Analisis Perbandingan Rekursif dan Iteratif**
+### **Analisis Perbandingan Rekursif dan Iteratif**
 
-**4.1. Kompleksitas Waktu**
+**Kompleksitas Waktu**
 - **Rekursif:**
   - Kompleksitas waktu: **O(n)**
   - Kompleksitas ruang: **O(n)** (karena penggunaan tumpukan rekursi untuk menyimpan status setiap panggilan fungsi).
@@ -85,19 +86,13 @@ Pada studi kasus ini, kita membandingkan kinerja dua pendekatan algoritma (“re
   - Kompleksitas waktu: **O(n)**
   - Kompleksitas ruang: **O(1)** (tidak menggunakan tumpukan rekursi).
 
-**4.2. Waktu Eksekusi Eksperimen**
-| Panjang Array | Waktu Rekursif (s) | Waktu Iteratif (s) |
-|---------------|---------------------|---------------------|
-| 100           | 0.00012            | 0.00004            |
-| 500           | 0.00030            | 0.00010            |
-| 1000          | 0.00060            | 0.00018            |
-| 1500          | 0.00102            | 0.00028            |
-
-**4.3. Interpretasi:**
+**Waktu Eksekusi Eksperimen**
+![image](https://github.com/yokaroo/Random/blob/main/Screenshot%202024-12-22%20214503.png)
+**Interpretasi:**
 1. Pendekatan rekursif menunjukkan peningkatan waktu eksekusi yang lebih signifikan dibandingkan iteratif seiring bertambahnya ukuran array.
 2. Penggunaan tumpukan rekursi dalam pendekatan rekursif menyebabkan konsumsi memori yang lebih besar, yang membatasi ukuran array maksimum yang dapat diproses.
 
-**4.4. Kelebihan dan Kekurangan:**
+**Kelebihan dan Kekurangan:**
 | **Pendekatan** | **Kelebihan**                                | **Kekurangan**                             |
 |-----------------|---------------------------------------------|--------------------------------------------|
 | Rekursif        | Solusi lebih intuitif dan elegan            | Tidak efisien untuk array besar            |
@@ -110,7 +105,7 @@ Pendekatan iteratif lebih efisien untuk data besar karena tidak memiliki batasan
 
 ---
 
-### **5. Referensi Jurnal (5 Tahun Terakhir)**
+### **Referensi**
 
 1. Gupta, R., & Srivastava, S. (2020). "Performance Analysis of Recursive and Iterative Algorithms." *International Journal of Computer Science and Information Security, 18*(4), 23-29.
 
